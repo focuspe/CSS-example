@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1[class="hoopla"] {color: silver;}
+        a[href][title] {font-weight: bold;}
+        a[href='http://www.baidu.com/']{color: red;}
+        p[class="urgent warning"]{font-weight: bold;}   /*完全匹配*/
+        span[class~="barren"] {font-style: italic;} /*不完全匹配*/
+        img[title~="figure"] {border: 1px solid red;} /*标签img title含有figure的不完全匹配*/
+    </style>
+</head>
+<body>
+<h1 class="hoopla">Hello</h1>
+<h1 class="server">Serenity</h1>
+<h1 class="fancy">Fooling</h1>
+<a href="#" title="link">链接1</a>
+<a href="#">链接1</a>
+<a href="http://www.baidu.com/">百度</a>
+<p class="urgent warning">Nothing can defeat you,except yourself.</p>
+<span class="barren rocky">Mercury</span>
+<span class="cloudy barren">Venus</span>
+<span class="life-bearing cloudy">Earth</span>
+<img src="img/sidebar.png" title="How to figure out">
+<img src="img/sidebar.png" >
+
+</body>
+</html>
